@@ -129,6 +129,8 @@ body {
 /* ---------------Страница Студия--------------- */
 /* ---------------Главный баннер--------------- */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   color: var(--contrast-txt-color);
   background-color: #2f303a;
 
@@ -138,15 +140,18 @@ body {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  /* padding-right: 452px;
+  padding-left: 452px; */
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
+
   font-family: inherit;
   cursor: pointer;
   font-weight: 700;
@@ -154,6 +159,12 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 2px solid transparent;
+
   color: var(--contrast-txt-color);
   background-color: var(--accent-color);
 }
@@ -161,6 +172,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------------Особенности--------------- */
