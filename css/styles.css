@@ -13,6 +13,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -25,6 +27,18 @@ body {
   border: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ---------------Шапка сайта--------------- */
@@ -70,11 +84,16 @@ body {
 }
 
 /* ---------------Подвал сайта--------------- */
+/* .footer a {
+  display: inline-block; */
+}
 .logo-studio {
   color: var(--contrast-txt-color);
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -106,18 +125,23 @@ body {
   color: var(--accent-color);
 }
 
+
 /* ---------------Страница Студия--------------- */
 /* ---------------Главный баннер--------------- */
 .hero {
   color: var(--contrast-txt-color);
   background-color: #2f303a;
+
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -141,6 +165,9 @@ body {
 
 /* ---------------Особенности--------------- */
 .features-name {
+  margin-top: 0;
+  margin-bottom: 10;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -149,6 +176,8 @@ body {
 }
 
 .features-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -156,7 +185,14 @@ body {
 }
 
 /* ---------------Чем мы занимаемся--------------- */
+.services {
+  padding-top: 0;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
