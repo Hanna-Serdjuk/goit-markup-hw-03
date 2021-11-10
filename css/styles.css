@@ -41,6 +41,12 @@ body {
   padding-bottom: 94px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ---------------Шапка сайта--------------- */
 
 .logo {
@@ -72,6 +78,10 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -206,9 +216,17 @@ body {
 }
 
 /* ---------------Особенности--------------- */
+.features-list {
+  display: flex;
+}
+
+.features-list .features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-name {
   margin-top: 0;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -242,6 +260,15 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
+
+.services-list {
+  display: flex;
+}
+
+.services-list .services-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* ---------------Наша команда--------------- */
 
 .team {
