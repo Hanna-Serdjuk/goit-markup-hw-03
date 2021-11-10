@@ -372,11 +372,11 @@ p {
 }
 
 .projects-list .item {
+  display: flex;
+  flex-direction: column;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
 }
 
 .projects-list .item:nth-child(3n) {
@@ -400,13 +400,10 @@ p {
   color: var(--secondary-txt-color);
 }
 
-.projects-list .item {
-  display: flex;
-  flex-direction: column;
-}
-
 .item > .content {
   flex-grow: 1;
-  margin-top: 20px;
-  padding: 0 24px 20px 24px;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
