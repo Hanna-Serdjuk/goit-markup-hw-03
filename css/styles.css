@@ -141,6 +141,11 @@ p {
 
 /* ---------------Подвал сайта--------------- */
 
+.logo-margin {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .logo-studio {
   color: var(--contrast-txt-color);
 }
@@ -149,10 +154,6 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.address .list {
-  margin-top: 20px;
 }
 
 .address .item:not(:last-child) {
@@ -332,6 +333,10 @@ p {
 
 /* ---------------Страница Портфолио--------------- */
 /* ---------------Портфолио проектов--------------- */
+.projects-link {
+  display: block;
+  text-decoration: none;
+}
 
 .filter-list {
   margin-bottom: 34px;
@@ -392,6 +397,7 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-txt-color);
 }
 .project-type {
   font-size: 16px;
@@ -400,7 +406,7 @@ p {
   color: var(--secondary-txt-color);
 }
 
-.item > .content {
+.item .content {
   flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
