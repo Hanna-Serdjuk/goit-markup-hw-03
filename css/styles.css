@@ -374,22 +374,16 @@ p {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .projects-list .item {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-}
-
-.projects-list .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.projects-list .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .project-title {
